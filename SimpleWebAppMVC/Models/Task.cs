@@ -2,18 +2,17 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-///using SimpleWebAppMVC.Validation;
 
 namespace SimpleWebAppMVC.Models
 {
     public class Task
     {
         /// <example>Task #1</example> 
-        ///[StringLength(50, MinimumLength = 3), Required] - Teste1
+        
         public string Title { get; set; }
 
         /// <example>The first task</example>
-        ///[StringLength(250)] - Teste 1
+       
         public string Description { get; set; }
 
         [DataType(DataType.Date)]
@@ -21,7 +20,7 @@ namespace SimpleWebAppMVC.Models
 
         /// <summary>Valid status codes: [ "N/A", "Not Started", "Started", "In Progress", "Almost Done", "Completed" ]</summary>
         /// <example>N/A</example>
-        ///[ValidateStatusCodes, Required] - Teste1
+       
         public string Status { get; set; }
 
         [NotMapped]
